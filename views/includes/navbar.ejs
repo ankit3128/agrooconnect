@@ -1,0 +1,111 @@
+<style>
+/* Navbar Styles */
+header {
+  background: #2e7d32;
+  color: #fff;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 12px;
+  padding: 6px 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.15);
+  transform: scale(1.05);
+}
+
+.actions a {
+  margin-left: 12px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.actions a.signup {
+  background: #fff;
+  color: #2e7d32;
+}
+
+.actions a.signup:hover {
+  background: #f1f1f1;
+}
+
+.actions a.signin {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.actions a.signin:hover {
+  background: #fff;
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin: 10px 0;
+  }
+  .actions {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+</style>
+
+<header>
+  <!-- Logo -->
+  <div class="logo">
+    🌾 AgroConnect
+  </div>
+
+  <!-- Center Menu -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- Actions (Right Side) -->
+  <div class="actions">
+    <a href="#" class="signup">Signup</a>
+    <a href="#" class="signin">Signin</a>
+    <a href="#" class="signin">Profile</a>
+  </div>
+</header>
